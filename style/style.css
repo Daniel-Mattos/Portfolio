@@ -75,7 +75,7 @@ body {
     font-weight: 400;
     font-size: 1.5rem;
 }
-.apresentacao__links__link:hover{
+.apresentacao__links__navegacao:hover{
     background-color: var(--cor-hover);
 }
 .rodape{
