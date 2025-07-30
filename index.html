@@ -22,7 +22,13 @@
       rel="stylesheet"
     />
 
+    <!-- Imports css -->
     <link rel="stylesheet" href="./src/css/global.css" />
+    <link rel="stylesheet" href="./src/css/header.css" />
+    <link rel="stylesheet" href="./src/css/acordeon.css" />
+    <link rel="stylesheet" href="./src/css/languages.css" />
+    <link rel="stylesheet" href="./src/css/portfolio.css" />
+
     <title>Portifólio Daniel Mattos</title>
   </head>
   <body>
@@ -36,34 +42,117 @@
         <h1 class="title">Olá,<br />eu sou o<br />Daniel Mattos</h1>
         <div class="information">
           <div class="about">
-            <img src="assets/icons/user.svg" alt="icon user">
+            <img src="assets/icons/user.svg" alt="icon user" />
             <p>Estágio DEV Full-stack</p>
           </div>
           <div class="about">
-            <img src="assets/icons/location.svg" alt="icon location">
+            <img src="assets/icons/location.svg" alt="icon location" />
             <p>São Paulo - BR</p>
           </div>
           <div class="about">
-            <img src="assets/icons/whatsapp.svg" alt="icon whatsapp">
-            <p>(11) 96424-2645</p>
+            <img src="assets/icons/whatsapp.svg" alt="icon whatsapp" />
+              <p>
+                <a class="link" href="tel:(11) 9 6424-2645">
+                  (11) 9 6424-2645
+                </a>
+              </p>
           </div>
           <div class="about">
-            <img src="assets/icons/email.svg" alt="icon email">
-            <p>danielmattosuba@gmail.com</p>
+            <img src="assets/icons/email.svg" alt="icon email" />
+              <p>
+                <a class="link" href="mailto:danielmattosuba@gmail.com">danielmattosuba@gmail.com</a>
+              </p>
+            </a>
           </div>
         </div>
       </header>
-        <section class="acordeon">
-          <button class="trigger">Idiomas</button>
-          <div class="content">
-            <ul>
-              <li>PT</li>
-              <li>EN</li>
-              <li>ES</li>
-              <li>FR</li>
-            </ul>
-          </div>
+      <section class="acordeon">
+            <button class="trigger" type="button">
+                Skills
+            </button>
+
+            <div class="content">
+                <div class="skills">
+                    <section class="tools">
+                        <h3>Ferramentas:</h3>
+                        <ul id="profile.skills.hardSkills">
+                        </ul>
+                    </section>
+
+                    <section class="personal">
+                        <h3>Pessoal:</h3>
+                        <ul id="profile.skills.softSkills">
+                            <li>Carregando...</li>
+                            <li>Carregando...</li>
+                            <li>Carregando...</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+      </section>
+      <section class="acordeon">
+        <button class="trigger" type="button">Idiomas</button>
+        <div class="content">
+          <ul class="languages">
+            <li>PT</li>
+            <li>EN</li>
+            <li>ES</li>
+            <li>FR</li>
+          </ul>
+        </div>
+      </section>
+      <section class="acordeon">
+        <button class="trigger" type="button">Portfólio</button>
+        <div class="content">
+          <ul class="portfolio">
+            <li>
+              <span class="title-portfolio github"
+                >Criando um Site de Pokedex</span
+              >
+              <a
+                class="link"
+                href="https://github.com/Daniel-Mattos/pokedex"
+                target="_blank"
+                >https://github.com/Daniel-Mattos/pokedex</a
+              >
+            </li>
+            <li>
+              <span class="title-portfolio github"
+                >Criando um Site de buscar informaçoes do CEP</span
+              >
+              <a
+                class="link"
+                href="https://github.com/Daniel-Mattos/sky-react"
+                target="_blank"
+                >https://github.com/Daniel-Mattos/sky-react</a
+              >
+            </li>
+            <li>
+              <span class="title-portfolio github"
+                >Criando um Site de Pesonagens de Anime</span
+              >
+              <a
+                class="link"
+                href="https://github.com/Daniel-Mattos/projeto-haikyuu-final"
+                target="_blank"
+                >https://github.com/Daniel-Mattos/projeto-haikyuu-final</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="acordeon">
+            <button class="trigger" type="button">
+                Experiência Profissional
+            </button>
+
+            <div class="content">
+                <ul class="experience" id="profile.professionalExperience">
+                </ul>
+            </div>
         </section>
+
     </div>
+    <script src="./src/js/acordeon.js"></script>
   </body>
 </html>
