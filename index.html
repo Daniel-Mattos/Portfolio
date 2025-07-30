@@ -1,158 +1,114 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="pt-BR">
 
-    <!-- Normalize -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portifólio Daniel Mattos</title>
 
-    <!-- Font  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Imports css -->
-    <link rel="stylesheet" href="./src/css/global.css" />
-    <link rel="stylesheet" href="./src/css/header.css" />
-    <link rel="stylesheet" href="./src/css/acordeon.css" />
-    <link rel="stylesheet" href="./src/css/languages.css" />
-    <link rel="stylesheet" href="./src/css/portfolio.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
 
-    <title>Portifólio Daniel Mattos</title>
-  </head>
-  <body>
-    <div class="main">
-      <header class="header">
-        <img
-          class="photo-user"
-          src="./assets/img/daniel-otmz.jpeg"
-          alt="Foto do Daniel Mattos"
-        />
-        <h1 class="title">Olá,<br />eu sou o<br />Daniel Mattos</h1>
-        <div class="information">
-          <div class="about">
-            <img src="assets/icons/user.svg" alt="icon user" />
-            <p>Estágio DEV Full-stack</p>
-          </div>
-          <div class="about">
-            <img src="assets/icons/location.svg" alt="icon location" />
-            <p>São Paulo - BR</p>
-          </div>
-          <div class="about">
-            <img src="assets/icons/whatsapp.svg" alt="icon whatsapp" />
-              <p>
-                <a class="link" href="tel:(11) 9 6424-2645">
-                  (11) 9 6424-2645
-                </a>
-              </p>
-          </div>
-          <div class="about">
-            <img src="assets/icons/email.svg" alt="icon email" />
-              <p>
-                <a class="link" href="mailto:danielmattosuba@gmail.com">danielmattosuba@gmail.com</a>
-              </p>
-            </a>
-          </div>
+  <link rel="stylesheet" href="./src/css/global.css">
+  <link rel="stylesheet" href="./src/css/header.css">
+  <link rel="stylesheet" href="./src/css/acordeon.css">
+  <link rel="stylesheet" href="./src/css/languages.css">
+  <link rel="stylesheet" href="./src/css/portfolio.css">
+  <link rel="stylesheet" href="./src/css/experience.css">
+  <link rel="stylesheet" href="./src/css/skills.css">
+</head>
+
+<body>
+  <main class="main">
+    <header class="header">
+      <img src="assets/img/daniel-otmz.jpeg" alt="Foto de Perfil" class="photo" id="profile.photo">
+
+      <h1 class="title">
+        Olá, <br>eu sou <br><span id="profile.name">Carregando...</span>
+      </h1>
+
+      <div class="information">
+        <p class="job" id="profile.job">Carregando...</p>
+        <p class="location" id="profile.location">Carregando...</p>
+        <p class="phone">
+          <a href="tel:(16) 9 9999-9999" id="profile.phone">Carregando...</a>
+        </p>
+        <p class="email">
+          <a href="mailto:ex@mail.com" id="profile.email">carregando@mail.com</a>
+        </p>
+      </div>
+    </header>
+
+    <section class="acordeon">
+      <button class="trigger" type="button">
+        <h2>Skills</h2>
+      </button>
+
+      <div class="content">
+        <div class="skills">
+          <section class="tools">
+            <h3>Ferramentas:</h3>
+            <ul id="profile.skills.hardSkills">
+            </ul>
+          </section>
+
+          <section class="personal">
+            <h3>Pessoal:</h3>
+            <ul id="profile.skills.softSkills">
+              <li>Carregando...</li>
+              <li>Carregando...</li>
+              <li>Carregando...</li>
+            </ul>
+          </section>
         </div>
-      </header>
-      <section class="acordeon">
-            <button class="trigger" type="button">
-                Skills
-            </button>
+      </div>
+    </section>
 
-            <div class="content">
-                <div class="skills">
-                    <section class="tools">
-                        <h3>Ferramentas:</h3>
-                        <ul id="profile.skills.hardSkills">
-                        </ul>
-                    </section>
+    <section class="acordeon">
+      <button class="trigger" type="button">
+        <h2>Idiomas</h2>
+      </button>
 
-                    <section class="personal">
-                        <h3>Pessoal:</h3>
-                        <ul id="profile.skills.softSkills">
-                            <li>Carregando...</li>
-                            <li>Carregando...</li>
-                            <li>Carregando...</li>
-                        </ul>
-                    </section>
-                </div>
-            </div>
-      </section>
-      <section class="acordeon">
-        <button class="trigger" type="button">Idiomas</button>
-        <div class="content">
-          <ul class="languages">
-            <li>PT</li>
-            <li>EN</li>
-            <li>ES</li>
-            <li>FR</li>
-          </ul>
-        </div>
-      </section>
-      <section class="acordeon">
-        <button class="trigger" type="button">Portfólio</button>
-        <div class="content">
-          <ul class="portfolio">
-            <li>
-              <span class="title-portfolio github"
-                >Criando um Site de Pokedex</span
-              >
-              <a
-                class="link"
-                href="https://github.com/Daniel-Mattos/pokedex"
-                target="_blank"
-                >https://github.com/Daniel-Mattos/pokedex</a
-              >
-            </li>
-            <li>
-              <span class="title-portfolio github"
-                >Criando um Site de buscar informaçoes do CEP</span
-              >
-              <a
-                class="link"
-                href="https://github.com/Daniel-Mattos/sky-react"
-                target="_blank"
-                >https://github.com/Daniel-Mattos/sky-react</a
-              >
-            </li>
-            <li>
-              <span class="title-portfolio github"
-                >Criando um Site de Pesonagens de Anime</span
-              >
-              <a
-                class="link"
-                href="https://github.com/Daniel-Mattos/projeto-haikyuu-final"
-                target="_blank"
-                >https://github.com/Daniel-Mattos/projeto-haikyuu-final</a
-              >
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="acordeon">
-            <button class="trigger" type="button">
-                Experiência Profissional
-            </button>
+      <div class="content">
+        <ul class="languages" id="profile.languages">
+          <li>Carregando...</li>
+        </ul>
+      </div>
+    </section>
 
-            <div class="content">
-                <ul class="experience" id="profile.professionalExperience">
-                </ul>
-            </div>
-        </section>
+    <section class="acordeon">
+      <button class="trigger" type="button">
+        <h2>Portfólio</h2>
+      </button>
 
-    </div>
-    <script src="./src/js/acordeon.js"></script>
-  </body>
+      <div class="content">
+        <ul class="portfolio" id="profile.portfolio">
+        </ul>
+      </div>
+    </section>
+
+    <section class="acordeon">
+      <button class="trigger" type="button">
+        <h2>Experiência Profissional</h2>
+      </button>
+
+      <div class="content">
+        <ul class="experience" id="profile.professionalExperience">
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="./src/js/acordeon.js"></script>
+  <script src="./src/js/api.js"></script>
+  <script src="./src/js/main.js"></script>
+</body>
+
 </html>

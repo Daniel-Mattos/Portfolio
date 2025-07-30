@@ -1,5 +1,5 @@
 {
-  "name": "Dnaiel Mattos",
+  "name": "Daniel Mattos",
   "photo": "https://avatars.githubusercontent.com/u/84470634?v=4",
   "job": "Estágio DEV Full-stack",
   "location": "São Paulo - SP",
@@ -28,8 +28,8 @@
         "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/html.png"
       },
       {
-        "name": "Postgresql",
-        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/postgresql.png"
+        "name": "TypeScript",
+        "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
       }
     ],
     "softSkills": [
